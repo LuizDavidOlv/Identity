@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj": {}
+    "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\Identity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj": {
+    "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\Identity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
+        "projectUniqueName": "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\Identity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
         "projectName": "AspNetCoreIdentity",
-        "projectPath": "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
+        "projectPath": "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\Identity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
         "packagesPath": "C:\\Users\\ldavidda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\AspNetCoreIdentity\\AspNetCoreIdentity\\obj\\",
+        "outputPath": "C:\\Users\\ldavidda\\Documents\\Arquivos\\dotNetCore\\Identity\\AspNetCoreIdentity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,7 +61,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             }
           },
           "imports": [
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
