@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspNetCoreIdentity.Areas.Identity.Data;
+using AspNetCoreIdentity.Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,7 +26,7 @@ namespace AspNetCoreIdentity
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -40,11 +42,28 @@ namespace AspNetCoreIdentity
                     options.UseSqlServer(Configuration.GetConnectionString("AspNetCoreIdentityContextConnection")));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
                 .AddDefaultUI()
                 .AddEntityFrameworkStores<AspNetCoreIdentityContext>();
+
+
+
+            services.AddAuthorization(options =>
+            {
+                //Mecanismo que verifica a claim é do próprio ASP.NET
+                options.AddPolicy("PodeExcluir", policy => policy.RequireClaim("PodeExcluir"));
+
+                //Requirement. É necessário ter um Handler (AuthorizartinHelper.cs)  quando se tem um requirement. 
+                options.AddPolicy("PodeLer", policy => policy.Requirements.Add(new PermissaoNecessaria("PodeLer")));
+                options.AddPolicy("PodeEscrever", policy => policy.Requirements.Add(new PermissaoNecessaria("PodeEscrever")));
+            });
+
+
+            // Registrando uma injeção de dependência. É necessário registrar o Handler (AuthorizartinHelper.cs) 
+            // como singleton para ser interpretado através dessa interface ( IAuthorizationHandler )
+            services.AddSingleton<IAuthorizationHandler, PermissaoNecessariaHandler>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -54,7 +73,6 @@ namespace AspNetCoreIdentity
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
