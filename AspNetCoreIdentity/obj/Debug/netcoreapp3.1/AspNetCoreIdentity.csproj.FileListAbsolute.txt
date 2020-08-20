@@ -295,9 +295,6 @@ C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\bin\
 C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.csprojAssemblyReference.cache
 C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.AssemblyInfoInputs.cache
 C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.AssemblyInfo.cs
-C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.csproj.CoreCompileInputs.cache
-C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.RazorAssemblyInfo.cache
 C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.RazorAssemblyInfo.cs
 C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.TagHelpers.input.cache
@@ -338,3 +335,12 @@ C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\
 C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
 C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
 C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\Razor\Views\Home\Secret.cshtml.g.cs
+C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\bin\Debug\netcoreapp3.1\appsettings.Production.json
+C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\bin\Debug\netcoreapp3.1\appsettings.Staging.json
+C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\Razor\Views\Teste\Index.cshtml.g.cs
+C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\bin\Debug\netcoreapp3.1\KissLog.dll
+C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\bin\Debug\netcoreapp3.1\KissLog.Apis.v1.dll
+C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\bin\Debug\netcoreapp3.1\KissLog.AspNetCore.dll
+C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.csproj.CoreCompileInputs.cache
+C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ldavidda\Documents\Arquivos\dotNetCore\Identity\AspNetCoreIdentity\obj\Debug\netcoreapp3.1\AspNetCoreIdentity.MvcApplicationPartsAssemblyInfo.cache
