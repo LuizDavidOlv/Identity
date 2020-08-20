@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 using AspNetCoreIdentity.Models;
 using Microsoft.AspNetCore.Authorization;
 using AspNetCoreIdentity.Extensions;
+using KissLog;
+using ILogger = KissLog.ILogger;
 
 namespace AspNetCoreIdentity.Controllers
 {
@@ -15,9 +17,9 @@ namespace AspNetCoreIdentity.Controllers
     public class HomeController : Controller
     {
 
-        private readonly ILogger<HomeController> _logger;  //Não consigo Fazer a aplicação rodar sem o <HomeController>
+        private readonly ILogger _logger;  
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger logger)
         {
             _logger = logger;
         }
@@ -26,8 +28,8 @@ namespace AspNetCoreIdentity.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
-            _logger.LogTrace("Usuário acessou a home!");
-            _logger.LogDebug("Hello world from .NET Core 3.x!");
+            _logger.Trace("Usuário acessou a home!");
+            _logger.Debug("Usuário acessou a home 2 !");
             return View();
         }
 

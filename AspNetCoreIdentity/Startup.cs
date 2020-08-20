@@ -1,4 +1,5 @@
 using AspNetCoreIdentity.Config;
+using AspNetCoreIdentity.Extensions;
 using KissLog;
 using KissLog.Apis.v1.Listeners;
 using KissLog.AspNetCore;
@@ -46,6 +47,10 @@ namespace AspNetCoreIdentity
             services.AddAuthorizationConfig();
             services.AddSession();
             services.AddControllersWithViews();
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(typeof(AuditoriaFilter));
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
